@@ -1,6 +1,6 @@
 # Vg-Delete-Button
 <p align="center">
-  <img src="./images/example.gif" width="200">
+  <img src="https://github.com/VemLavarALoucaGamers/vlalg-frontend-components/raw/main/vue-components/vg-delete-button/images/example.gif" width="200">
 </p>
 
 This is a component delete button.
@@ -62,7 +62,7 @@ app.mount('#app')
 ## Example
 
 <p align="left">
-  <img src="./images/props_example.png" width="150">
+  <img src="https://github.com/VemLavarALoucaGamers/vlalg-frontend-components/raw/main/vue-components/vg-delete-button/images/props_example.png" width="150">
 </p>
 
 ```jsx
