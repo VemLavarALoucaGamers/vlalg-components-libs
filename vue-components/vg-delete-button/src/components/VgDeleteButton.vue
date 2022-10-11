@@ -14,9 +14,9 @@
   </div>
 </template>
 <script>
-import { computed, ref, toRefs } from 'vue';
+import { defineComponent, computed, ref, toRefs } from 'vue';
 
-export default {
+export default defineComponent ({
   name: 'VgDeleteButton',
   inheritAttrs: false,
   emits: ['clicked'],
@@ -82,7 +82,7 @@ export default {
       btClicked
     };
   },
-};
+})
 </script>
 
 <style scoped>

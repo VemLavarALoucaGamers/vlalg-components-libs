@@ -1,20 +1,20 @@
 # Vg-Delete-Button
 <p align="center">
-  <img src="https://github.com/VemLavarALoucaGamers/vlalg-frontend-components/raw/main/vue-components/vg-delete-button/images/example.gif" width="200">
+  <img src="https://github.com/VemLavarALoucaGamers/vlalg-frontend-components/raw/main/vue-components/vg-circle-avatar/images/example.gif" width="200">
 </p>
 
-This is a component delete button.
+This is a component circle avatar.
 
 It doesn't have any logic internally, but it returns an event when clicked.
 
 ## Installation
 
 ```bash
-npm install @vemlavaraloucagamers/vg-delete-button
+npm install @vemlavaraloucagamers/vg-circle-avatar
 
 # or
 
-yarn install @vemlavaraloucagamers/vg-delete-button
+yarn install @vemlavaraloucagamers/vg-circle-avatar
 ```
 
 ## Usage
@@ -23,25 +23,25 @@ yarn install @vemlavaraloucagamers/vg-delete-button
 import { createApp } from 'vue'
 import App from './App.vue'
 
-import VgDeleteButton from '@vemlavaraloucagamers/vg-delete-button'
+import VgCircleAvatar from '@vemlavaraloucagamers/vg-circle-avatar'
 
 const app = createApp(App)
-app.use(VgDeleteButton)
+app.use(TonhaoInputsThree)
 app.mount('#app')
 ```
 
 ```jsx
 // page.vue
 <template>
-  <VgDeleteButton />
+  <VgCircleAvatar />
 </template>
 
 <template>
-  <vg-delete-button />
+  <vg-circle-avatar />
 </template>
 
 <template>
-  <vg-delete-button></vg-delete-button>
+  <vg-circle-avatar></vg-circle-avatar>
 </template>
 ```
 
@@ -62,13 +62,13 @@ app.mount('#app')
 ## Example
 
 <p align="left">
-  <img src="https://github.com/VemLavarALoucaGamers/vlalg-frontend-components/raw/main/vue-components/vg-delete-button/images/props_example.png" width="150">
+  <img src="https://github.com/VemLavarALoucaGamers/vlalg-frontend-components/raw/main/vue-components/vg-circle-avatar/images/props_example.png" width="150">
 </p>
 
 ```jsx
 // page.vue
 <template>
-  <VgDeleteButton
+  <VgCircleAvatar
     text="Delete"
     activeBg="blue"
     activeColor="#E35BF9"

@@ -1,17 +1,17 @@
 {
-  "name": "@vemlavaraloucagamers/vg-delete-button",
+  "name": "@vemlavaraloucagamers/vg-circle-avatar",
   "private": false,
-  "version": "1.1.0",
+  "version": "1.0.0",
   "type": "module",
-  "main": "./dist/vg-delete-button.umd.js",
-  "module": "./dist/vg-delete-button.js",
+  "main": "./dist/vg-circle-avatar.umd.js",
+  "module": "./dist/vg-circle-avatar.js",
   "files": [
     "dist"
   ],
   "exports": {
     ".": {
-      "import": "./dist/vg-delete-button.js",
-      "require": "./dist/vg-delete-button.umd.js"
+      "import": "./dist/vg-circle-avatar.js",
+      "require": "./dist/vg-circle-avatar.umd.js"
     },
     "./dist/style.css": "./dist/style.css"
   },
@@ -45,7 +45,7 @@
     "type": "git",
     "url": "https://github.com/VemLavarALoucaGamers/vlalg-frontend-components"
   },
-  "homepage": "https://github.com/VemLavarALoucaGamers/vlalg-frontend-components/tree/main/vue-components/vg-delete-button",
+  "homepage": "https://github.com/VemLavarALoucaGamers/vlalg-frontend-components/tree/main/vue-components/vg-circle-avatar",
   "keywords": [
     "vuejs",
     "vue js",
