@@ -1,0 +1,15 @@
+{
+  "name": "vlalg-frontend-components",
+  "description": "VLALG Vuejs Components",
+  "version": "1.0.0",
+  "license": "MIT",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "packages/*",
+      "vue-components/*"
+    ]
+  },
+  "author": "Antonio and Felipe",
+  "repository": "https://github.com/VemLavarALoucaGamers/vlalg-frontend-components"
+}

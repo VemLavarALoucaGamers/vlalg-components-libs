@@ -1,0 +1,43 @@
+// File: _general.scss
+// This file contains components config.
+/* STYLES GO HERE */
+.no-padding {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+.d-none {
+  display: none !important;
+}
+.d-block {
+  display: block !important;
+}
+.d-inline {
+  display: inline !important;
+}
+.d-inline_block {
+  display: inline-block !important;
+}
+
+.highlight-box-text {
+  font-family: 'Lato Black';
+  background-color: $color-fiery-rose-logo;
+  color: #fff;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+.highlight-line-text {
+  font-family: 'Lato Black';
+  -webkit-text-decoration-line: underline; /* Safari */
+  text-decoration-line: underline;
+  text-decoration-color: $color-fiery-rose-logo;
+}
+
+.text-italic {
+  font-style: italic;
+}
+.text-bold {
+  font-weight: bold;
+}
+.text-align-center {
+  text-align: center;
+}
