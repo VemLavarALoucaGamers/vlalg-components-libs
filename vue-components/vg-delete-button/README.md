@@ -10,11 +10,11 @@ It doesn't have any logic internally, but it returns an event when clicked.
 ## Installation
 
 ```bash
-npm install @vlalg-frontend-components/vg-delete-button
+npm install @vemlavaraloucagamers/vg-delete-button
 
 # or
 
-yarn install @vlalg-frontend-components/vg-delete-button
+yarn install @vemlavaraloucagamers/vg-delete-button
 ```
 
 ## Usage
@@ -23,7 +23,7 @@ yarn install @vlalg-frontend-components/vg-delete-button
 import { createApp } from 'vue'
 import App from './App.vue'
 
-import VgDeleteButton from '@vlalg-frontend-components/vg-delete-button'
+import VgDeleteButton from '@vemlavaraloucagamers/vg-delete-button'
 
 const app = createApp(App)
 app.use(TonhaoInputsThree)
@@ -64,6 +64,7 @@ app.mount('#app')
 <p align="left">
   <img src="./images/props_example.png" width="150">
 </p>
+
 ```jsx
 // page.vue
 <template>
@@ -85,6 +86,7 @@ app.mount('#app')
   }
 </script>
 ```
+
 ```bash
 # console
 clicked event: true

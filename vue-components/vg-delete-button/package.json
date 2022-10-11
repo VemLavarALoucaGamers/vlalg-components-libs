@@ -1,6 +1,6 @@
 {
-  "name": "@vlalg-frontend-components/vg-delete-button",
-  "private": true,
+  "name": "@vemlavaraloucagamers/vg-delete-button",
+  "private": false,
   "version": "1.0.0",
   "type": "module",
   "main": "./dist/vg-delete-button.umd.js",
@@ -40,5 +40,24 @@
     "sass": "^1.55.0",
     "vite": "^3.0.9",
     "vitest": "^0.23.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/VemLavarALoucaGamers/vlalg-frontend-components"
+  },
+  "homepage": "https://github.com/VemLavarALoucaGamers/vlalg-frontend-components/tree/main/vue-components/vg-delete-button",
+  "keywords": [
+    "vuejs",
+    "vue js",
+    "button",
+    "vue plugin",
+    "delete",
+    "delete button",
+    "components",
+    "component",
+    "vue components",
+    "vuejs components",
+    "vue js components"
+  ],
+  "author": "Antonio and Felipe <Vem Lavar a Louca Gamers> (https://vemlavaralouca.com.br)"
 }

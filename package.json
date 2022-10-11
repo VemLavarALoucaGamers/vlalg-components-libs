@@ -10,6 +10,20 @@
       "vue-components/*"
     ]
   },
-  "author": "Antonio and Felipe",
-  "repository": "https://github.com/VemLavarALoucaGamers/vlalg-frontend-components"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/VemLavarALoucaGamers/vlalg-frontend-components"
+  },
+  "homepage": "https://github.com/VemLavarALoucaGamers/vlalg-frontend-components/tree/main/vue-components/vg-delete-button",
+  "keywords": [
+    "vuejs",
+    "vue js",
+    "vue plugin",
+    "components",
+    "component",
+    "vue components",
+    "vuejs components",
+    "vue js components"
+  ],
+  "author": "Antonio and Felipe <Vem Lavar a Louca Gamers> (https://vemlavaralouca.com.br)"
 }
