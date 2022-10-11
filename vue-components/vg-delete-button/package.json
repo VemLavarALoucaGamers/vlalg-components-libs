@@ -1,0 +1,44 @@
+{
+  "name": "@vlalg-frontend-components/vg-delete-button",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "main": "./dist/vg-delete-button.umd.js",
+  "module": "./dist/vg-delete-button.js",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/vg-delete-button.js",
+      "require": "./dist/vg-delete-button.umd.js"
+    },
+    "./dist/style.css": "./dist/style.css"
+  },
+  "browser": {
+    "./style.css": "./dist/style.css"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview --port 4173",
+    "test:unit": "vitest --environment jsdom",
+    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore",
+    "format:prettier": "prettier --write . '!**/*.{js,vue}'",
+    "npm:publish": "vite build && npm login && npm publish --access=public"
+  },
+  "dependencies": {
+    "vue": "^3.2.38"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^3.0.3",
+    "@vue/test-utils": "^2.0.2",
+    "eslint": "^8.22.0",
+    "eslint-plugin-vue": "^9.3.0",
+    "jsdom": "^20.0.0",
+    "prettier": "^2.7.1",
+    "sass": "^1.55.0",
+    "vite": "^3.0.9",
+    "vitest": "^0.23.0"
+  }
+}
