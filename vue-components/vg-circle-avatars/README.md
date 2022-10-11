@@ -14,7 +14,7 @@ npm install @vemlavaraloucagamers/vg-circle-avatar
 
 # or
 
-yarn install @vemlavaraloucagamers/vg-circle-avatar
+yarn add @vemlavaraloucagamers/vg-circle-avatar
 ```
 
 ## Usage

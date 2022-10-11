@@ -1,4 +1,5 @@
 # Vg-Delete-Button
+> This component is only for [Vue.js 3+](https://vuejs.org/)
 <p align="center">
   <img src="https://github.com/VemLavarALoucaGamers/vlalg-frontend-components/raw/main/vue-components/vg-delete-button/images/example.gif" width="200">
 </p>
@@ -14,7 +15,7 @@ npm install @vemlavaraloucagamers/vg-delete-button
 
 # or
 
-yarn install @vemlavaraloucagamers/vg-delete-button
+yarn add @vemlavaraloucagamers/vg-delete-button
 ```
 
 ## Usage
