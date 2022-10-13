@@ -1,4 +1,5 @@
 # Vg-Countdown
+> This component is only for [Vue.js 3+](https://vuejs.org/)
 <p align="center">
   <img src="https://github.com/VemLavarALoucaGamers/vlalg-frontend-components/raw/main/vue-components/vg-countdown/images/example.gif" width="200">
 </p>
