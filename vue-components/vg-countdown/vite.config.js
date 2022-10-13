@@ -7,8 +7,8 @@ export default defineConfig({
   build: {
     lib: {
       entry: path.resolve(__dirname, 'src/install.js'),
-      name: 'VgCircleAvatar',
-      fileName: 'vg-circle-avatar',
+      name: 'VgCountdown',
+      fileName: 'vg-countdown',
       formats: ['umd', 'es'],
     },
     rollupOptions: {
@@ -27,6 +27,7 @@ export default defineConfig({
     alias: {
       '@': path.resolve(__dirname, './src'),
       '@components': path.resolve(__dirname, 'src', 'components'),
+      '@helpers': path.resolve(__dirname, 'src', 'helpers'),
     },
   },
 });

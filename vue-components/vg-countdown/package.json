@@ -1,17 +1,17 @@
 {
-  "name": "@vemlavaraloucagamers/vg-circle-avatar",
+  "name": "@vemlavaraloucagamers/vg-countdown",
   "private": false,
   "version": "1.0.0",
   "type": "module",
-  "main": "./dist/vg-circle-avatar.umd.js",
-  "module": "./dist/vg-circle-avatar.js",
+  "main": "./dist/vg-countdown.umd.js",
+  "module": "./dist/vg-countdown.js",
   "files": [
     "dist"
   ],
   "exports": {
     ".": {
-      "import": "./dist/vg-circle-avatar.js",
-      "require": "./dist/vg-circle-avatar.umd.js"
+      "import": "./dist/vg-countdown.js",
+      "require": "./dist/vg-countdown.umd.js"
     },
     "./dist/style.css": "./dist/style.css"
   },
@@ -45,14 +45,12 @@
     "type": "git",
     "url": "https://github.com/VemLavarALoucaGamers/vlalg-frontend-components"
   },
-  "homepage": "https://github.com/VemLavarALoucaGamers/vlalg-frontend-components/tree/main/vue-components/vg-circle-avatar",
+  "homepage": "https://github.com/VemLavarALoucaGamers/vlalg-frontend-components/tree/main/vue-components/vg-countdown",
   "keywords": [
     "vuejs",
     "vue js",
-    "button",
     "vue plugin",
-    "delete",
-    "delete button",
+    "countdown",
     "components",
     "component",
     "vue components",

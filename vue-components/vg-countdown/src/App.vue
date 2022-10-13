@@ -4,33 +4,31 @@
       <div class="col-md-10 col-md-offset-1 test-page__title">
         <h2>Test page</h2>
         <p class="test-page__component-name">
-          <strong>Component:</strong> VgDeleteButton
+          <strong>Component:</strong> VgCountdown
         </p>
         <p class="test-page__warning">
           Warning: Look at the console to see the click event
         </p>
-        Text: <input
-          v-model="buttonTxt"
-          type="text"
-        /><br />
-        Background (hex/name): <input
-          v-model="activeBg"
-          type="text"
-        /><br />
-        Color (hex/name): <input
-          v-model="activeColor"
-          type="text"
-        />
       </div>
     </div>
 
     <div class="row">
-      <div class="col-md-10 col-md-offset-1 test-page__content">
-        <VgDeleteButton
-          :text="buttonTxt"
-          :active-bg="activeBg"
-          :active-color="activeColor"
-          @clicked="changeStatus"
+      <div
+        class="col-md-10 col-md-offset-1 test-page__content"
+        style="margin-top: 50px;"
+      >
+        <VgCountdown
+          :day="day"
+          :month="month"
+          :year="year"
+          :hour="hour"
+          :minute="minute"
+          :second="second"
+          border-color="blue"
+          text-color="blue"
+          border
+          separator
+          separator-type="/"
         />
       </div>
     </div>
@@ -42,25 +40,29 @@ import { defineComponent, defineAsyncComponent, ref } from 'vue';
 export default defineComponent({
   name: 'App',
   components: {
-    VgDeleteButton: defineAsyncComponent(() => import('@components/VgDeleteButton.vue')),
+    VgCountdown: defineAsyncComponent(() => import('@components/VgCountdown.vue')),
   },
   emits: [],
   props: {},
   setup () {
-    const buttonTxt = ref('Delete');
-    const activeBg = ref('');
-    const activeColor = ref('');
+    const day = ref(14)
+    const month = ref('oct')
+    const year = ref(2024)
+    const hour = ref(19)
+    const minute = ref(44)
+    const second = ref(10)
 
-    const changeStatus = (value) => {
-      console.log('clicked event: ', value)
-    }
+    const toDate = ref('oct 11, 2022 16:05:00')
 
     return {
-      buttonTxt,
-      activeBg,
-      activeColor,
-      changeStatus
-    };
+      day,
+      month,
+      year,
+      hour,
+      minute,
+      second,
+      toDate
+    }
   },
 });
 </script>

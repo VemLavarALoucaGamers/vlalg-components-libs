@@ -71,7 +71,7 @@ export default defineComponent ({
 
     const btClicked = () => {
       clicked.value = !clicked.value
-      emit('clicked', clicked.value);
+      emit('clicked', clicked.value)
     }
 
     return {
@@ -90,6 +90,8 @@ export default defineComponent ({
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  line-height: 1.42857143;
+  font-family: 'Lato', sans-serif;
   position: relative;
   width: 160px;
   background: #333;
