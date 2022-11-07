@@ -67,7 +67,7 @@
             </span>
             
             <img
-              src="images/pattern.png"
+              src="@images/pattern.png"
               alt=""
               class="vg-credit-card__back-column-info--image"
               style="position: absolute; z-index: 0; left: 0; top: 0; right: 0;"

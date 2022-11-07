@@ -7,8 +7,8 @@ export default defineConfig({
   build: {
     lib: {
       entry: path.resolve(__dirname, 'src/install.js'),
-      name: 'VgCountdown',
-      fileName: 'vg-countdown',
+      name: 'VgCreditCard',
+      fileName: 'vg-credit-card',
       formats: ['umd', 'es'],
     },
     rollupOptions: {
