@@ -49,6 +49,7 @@ app.mount('#app')
 
 | name    | Value type | Default | Description |
 | ------- | :--------- | :------ | :---------------------------- |
+| vgId (*)    | String     |        | Sets the id attribute to differentiate from other components |
 | day (*)    | Number     | 0       | Completion day, from 1 to 31 |
 | month (*)   | String    | jan     | Completion month, jan to dec |
 | year (*)   | Number     | 9999    | Completion year, from an integer value representing a year to the number 9999 |
@@ -75,7 +76,6 @@ app.mount('#app')
 
 | name    | Return type | Description |
 | ------- | :--------- | :---------------------------- |
-| vgId (*)    | String     |        | Sets the id attribute to differentiate from other components |
 | started | Boolean | Triggered when the countdown is started |
 | finished | Boolean | Triggered when the countdown is finished |
 
