@@ -1,0 +1,19 @@
+{
+  "name": "@vemlavaraloucagamers/helpers",
+  "description": "Helpers for components e packages",
+  "version": "1.0.0",
+  "license": "MIT",
+  "private": false,
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "projects",
+    "helpers",
+    "js",
+    "javascript",
+    "functions"
+  ],
+  "author": "Antonio and Felipe <Vem Lavar a Louca Gamers> (https://vemlavaralouca.com.br)"
+}

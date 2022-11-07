@@ -1,6 +1,7 @@
 <template>
   <div
-    id="VgCountdown"
+    v-if="vgId"
+    :id="vgId"
     class="vg-countdown"
     :style="[ contentColor, borderStyle ]"
   >
@@ -83,6 +84,10 @@ export default defineComponent ({
   inheritAttrs: false,
   emits: ['started', 'finished'],
   props: {
+    vgId: {
+      type: String,
+      required: true,
+    },
     day: {
       type: Number,
       required: true,

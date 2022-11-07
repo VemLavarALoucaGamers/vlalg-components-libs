@@ -1,7 +1,7 @@
 {
   "name": "@vemlavaraloucagamers/vg-delete-button",
   "private": false,
-  "version": "1.1.1",
+  "version": "2.0.0",
   "type": "module",
   "main": "./dist/vg-delete-button.umd.js",
   "module": "./dist/vg-delete-button.js",

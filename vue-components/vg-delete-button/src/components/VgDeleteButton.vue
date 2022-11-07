@@ -1,6 +1,7 @@
 <template>
   <div
-    id="VgDeleteButton"
+    v-if="vgId"
+    :id="vgId"
     href="#"
     :class="['vg-delete-button', activeButton]"
     :style="[activeColors]"
@@ -21,6 +22,10 @@ export default defineComponent ({
   inheritAttrs: false,
   emits: ['clicked'],
   props: {
+    vgId: {
+      type: String,
+      required: true,
+    },
     text: String,
     activeBg: String,
     activeColor: String,

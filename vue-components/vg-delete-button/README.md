@@ -47,9 +47,11 @@ app.mount('#app')
 ```
 
 ## Props
+> Items with an (*) mean they are required
 
 | name    | Value type | Description |
 | ------- | :--------- | :---------------------------- |
+| vgId (*)    | String     |        | Sets the id attribute to differentiate from other components |
 | text    | String | Define text button |
 | activeBg | String | Define active background color (Hex or Color name) |
 | activeColor | String | Define active text color (Hex or Color name) |
@@ -70,6 +72,7 @@ app.mount('#app')
 // page.vue
 <template>
   <VgDeleteButton
+    vg-id="vg-delete-button"
     text="Delete"
     activeBg="blue"
     activeColor="#E35BF9"

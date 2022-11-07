@@ -27,6 +27,7 @@
     <div class="row">
       <div class="col-md-10 col-md-offset-1 test-page__content">
         <VgDeleteButton
+          vg-id="asdas"
           :text="buttonTxt"
           :active-bg="activeBg"
           :active-color="activeColor"

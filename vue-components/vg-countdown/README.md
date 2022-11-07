@@ -75,6 +75,7 @@ app.mount('#app')
 
 | name    | Return type | Description |
 | ------- | :--------- | :---------------------------- |
+| vgId (*)    | String     |        | Sets the id attribute to differentiate from other components |
 | started | Boolean | Triggered when the countdown is started |
 | finished | Boolean | Triggered when the countdown is finished |
 
@@ -88,6 +89,7 @@ app.mount('#app')
 // page.vue
 <template>
   <VgCountdown
+    vg-id="vg-countdown"
     :day="14"
     month="oct"
     :year="2024"
