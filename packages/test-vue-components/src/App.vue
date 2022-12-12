@@ -11,6 +11,9 @@ export default {
   components: {
     HelloWorld
   },
+  mounted () {
+    this.$log.logDebug('Hello world')
+  },
   data () {
     return {}
   }

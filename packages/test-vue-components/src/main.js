@@ -1,6 +1,18 @@
 import { createApp } from 'vue'
 import App from './App.vue'
 
-import PluginX from '@vemlavaraloucagamers/vg-countdown'
+import LoggerFactory from '@vlalg-frontend-components/md-log-manager'
+const nodeEnv = process.env.VUE_APP_APPLICATION_ENV || process.env.NODE_ENV
+const isDev = !!(nodeEnv === 'development')
+const logOptions = {
+  className: 'App Name',
+  showLogs: 'Trace',
+  nodeEnv: nodeEnv,
+  showLogs: isDev ? 'Trace' : 'Warn'
+}
 
-createApp(App).use(PluginX).mount('#app')
+let app = createApp(App)
+
+app.config.globalProperties.$log = new LoggerFactory(logOptions).create()
+
+app.mount('#app')

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modules</title>
+    <script src="app.js"></script>
+    <!--<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>-->
+</head>
+<body>
+    <h3>Hello Modules</h3>
+
+    <button onclick="_ola()">Ola 1</button>
+    <button type="button" id="button2">Ola 1</button>
+
+    <script type="module">
+        import { hello } from './modules/module-1.js'
+
+        // expose function
+        window._ola = hello
+
+        document.querySelector('#button2').addEventListener('click', hello)
+    </script>
+    <script type="module">
+        import aiai from './modules/module-4.js'
+
+        aiai()
+    </script>
+    <script type="module" src="modules/module-5.js"></script>
+</body>
+</html>
