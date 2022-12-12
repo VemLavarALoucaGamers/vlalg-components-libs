@@ -1,7 +1,7 @@
 import { createApp } from 'vue'
 import App from './App.vue'
 
-import LoggerFactory from '@vlalg-frontend-components/md-log-manager'
+import LoggerFactory from '@vemlavaraloucagamers/md-log-manager'
 const nodeEnv = process.env.VUE_APP_APPLICATION_ENV || process.env.NODE_ENV
 const isDev = !!(nodeEnv === 'development')
 const logOptions = {
