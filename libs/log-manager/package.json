@@ -1,5 +1,5 @@
 {
-	"name": "@vlalg-frontend-components/md-log-manager",
+	"name": "@vemlavaraloucagamers/md-log-manager",
 	"description": "Module Log Manager",
 	"license": "MIT",
 	"private": false,
@@ -23,7 +23,7 @@
 		"js": "cross-env NODE_ENV=development && rollup --config",
 		"js:minify": "cross-env NODE_ENV=production rollup --config",
 		"js:watch": "rollup --config --watch",
-		"npm:publish": "js && npm login && npm publish --access=public"
+		"npm:publish": "yarn js && npm login && npm publish --access=public"
 	},
 	"dependencies": {},
 	"devDependencies": {

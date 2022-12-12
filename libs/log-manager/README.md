@@ -143,7 +143,7 @@ yarn add @vlalg-frontend-components/md-log-manager
 
 ##### To use
 ```js
-import LoggerFactory from '@vlalg-frontend-components/md-log-manager'
+import LoggerFactory from '@vemlavaraloucagamers/md-log-manager'
 
 const nodeEnv = process.env.NODE_ENV
 const isDev = !!(nodeEnv === 'development')
