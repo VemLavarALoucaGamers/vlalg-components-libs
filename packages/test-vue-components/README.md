@@ -1,4 +1,7 @@
 # test-vue-components
+This project is for testing the components simulating a real project.
+
+You can also test in the component itself, running the App.vue file.
 
 ## Project setup
 ```
