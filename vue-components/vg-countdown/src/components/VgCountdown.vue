@@ -81,7 +81,7 @@ import { validDay, validMonth, validYear, validHour, validMinute, validSecond } 
 
 export default defineComponent ({
   name: 'VgCountdown',
-  inheritAttrs: false,
+  inheritAttrs: true,
   emits: ['started', 'finished'],
   props: {
     vgId: {

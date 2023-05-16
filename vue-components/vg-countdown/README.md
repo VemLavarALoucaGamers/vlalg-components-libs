@@ -23,6 +23,7 @@ import { createApp } from 'vue'
 import App from './App.vue'
 
 import VgCountdown from '@vemlavaraloucagamers/vg-countdown'
+import "@vemlavaraloucagamers/vg-countdown/dist/style.css";
 
 const app = createApp(App)
 app.use(VgCountdown)

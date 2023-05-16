@@ -3,4 +3,5 @@ import App from './App.vue';
 
 import '../../../scss/main.scss';
 
-createApp(App).mount('#app');
+const app = createApp(App);
+app.use(VgCountdown).mount("#app");
