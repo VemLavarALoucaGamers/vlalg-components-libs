@@ -25,6 +25,7 @@ import { createApp } from 'vue'
 import App from './App.vue'
 
 import VgDeleteButton from '@vemlavaraloucagamers/vg-delete-button'
+import "@vemlavaraloucagamers/vg-delete-button/dist/style.css";
 
 const app = createApp(App)
 app.use(VgDeleteButton)
