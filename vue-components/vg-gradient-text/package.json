@@ -1,7 +1,7 @@
 {
   "name": "@vemlavaraloucagamers/vg-gradient-text",
   "private": false,
-  "version": "1.0.0",
+  "version": "1.0.2",
   "type": "module",
   "main": "./dist/vg-gradient-text.umd.js",
   "module": "./dist/vg-gradient-text.js",
@@ -28,10 +28,12 @@
     "npm:publish": "vite build && npm login && npm publish --access=public"
   },
   "dependencies": {
-    "@vemlavaraloucagamers/helpers": "1.0.0",
     "vue": "^3.2.38"
   },
   "devDependencies": {
+    "@vemlavaraloucagamers/helpers": "1.0.0",
+    "@rollup/plugin-commonjs": "^25.0.0",
+    "@rollup/plugin-node-resolve": "^15.0.2",
     "@vitejs/plugin-vue": "^3.0.3",
     "@vue/test-utils": "^2.0.2",
     "eslint": "^8.22.0",

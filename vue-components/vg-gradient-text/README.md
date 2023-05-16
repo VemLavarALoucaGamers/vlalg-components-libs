@@ -24,6 +24,7 @@ import { createApp } from 'vue'
 import App from './App.vue'
 
 import VgGradientText from '@vemlavaraloucagamers/vg-gradient-text'
+import "@vemlavaraloucagamers/vg-gradient-text/dist/style.css";
 
 const app = createApp(App)
 app.use(VgGradientText)
