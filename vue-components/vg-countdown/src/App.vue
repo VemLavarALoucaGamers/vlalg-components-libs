@@ -18,6 +18,7 @@
         style="margin-top: 50px;"
       >
         <VgCountdown
+          vg-id="test"
           :day="day"
           :month="month"
           :year="year"

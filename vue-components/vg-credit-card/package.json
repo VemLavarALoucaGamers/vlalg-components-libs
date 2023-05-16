@@ -1,7 +1,7 @@
 {
   "name": "@vemlavaraloucagamers/vg-credit-card",
   "private": false,
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "module",
   "main": "./dist/vg-credit-card.umd.js",
   "module": "./dist/vg-credit-card.js",
@@ -33,6 +33,8 @@
     "vue-the-mask": "^0.11.1"
   },
   "devDependencies": {
+    "@rollup/plugin-commonjs": "^25.0.0",
+    "@rollup/plugin-node-resolve": "^15.0.2",
     "@vitejs/plugin-vue": "^3.0.3",
     "@vue/test-utils": "^2.0.2",
     "eslint": "^8.22.0",
