@@ -1,7 +1,7 @@
 {
   "name": "@vemlavaraloucagamers/vg-countdown",
   "private": false,
-  "version": "2.0.2",
+  "version": "2.0.3",
   "type": "module",
   "main": "./dist/vg-countdown.umd.js",
   "module": "./dist/vg-countdown.js",
@@ -31,6 +31,8 @@
     "vue": "^3.2.38"
   },
   "devDependencies": {
+    "@rollup/plugin-commonjs": "^25.0.0",
+    "@rollup/plugin-node-resolve": "^15.0.2",
     "@vitejs/plugin-vue": "^3.0.3",
     "@vue/test-utils": "^2.0.2",
     "eslint": "^8.22.0",
