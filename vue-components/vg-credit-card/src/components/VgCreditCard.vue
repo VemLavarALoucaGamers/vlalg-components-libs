@@ -1,138 +1,140 @@
 <template>
-  <div
-    v-if="vgId"
-    :id="vgId"
-    class="vg-credit-card"
-    :style="[ verticalAlign ]"
-  >
-    <VgCreditCardCards
-      :vg-id="`${vgId}-card`"
-      :chip-model="chipModel"
-      :card-number="cdNumber"
-      :card-name="cdName"
-      :card-exp-month="cdExpMonth"
-      :card-exp-year="cdExpYear"
-      :card-ccv="cdCcv"
-      :format-mode="formatMode"
-      :flip-card="flipCardCcvTrigger"
-      :flip-on-hover="flipOnHover"
-      :card-background="cardBackground"
-      :card-color="cardColor"
-      :card-radius="cardRadius"
-      :card-shadow="cardShadow"
-      :card-ccv-color="cardCcvColor"
-      :card-holder-text="cardHolderText"
-      :card-expiration-text="cardExpirationText"
-      :card-ccv-text="cardCcvText"
-      @updated-card-config="changeCardConfig"
-    />
-
+  <div class="vg-wrapper">
     <div
-      v-if="showForm"
-      :vg-id="`${vgId}-form`"
-      :style="[formStyleBg, formStyleColor, formStyleBorderRadius, formStyleShadow]"
-      class="vg-credit-card__form"
+      v-if="vgId"
+      :id="vgId"
+      class="vg-credit-card vg-reset"
+      :style="[ verticalAlign ]"
     >
-      <div class="vg-credit-card__form-items">
-        <span class="vg-credit-card__form-items--text">{{ formNumberText }}</span>
-        <input
-          v-model="cdNumber"
-          v-mask="getCardMask"
-          type="text"
-          :maxlength="getMaxCardNumber"
-          :style="[inputStyle, isActiveInputNumber]"
-          class="vg-credit-card__form-items--input"
-          autocomplete="off"
-          @active="activeNumber = true"
-          @focus="activeNumber = true"
-          @blur="activeNumber = false"
-        />
-      </div>
+      <VgCreditCardCards
+        :vg-id="`${vgId}-card`"
+        :chip-model="chipModel"
+        :card-number="cdNumber"
+        :card-name="cdName"
+        :card-exp-month="cdExpMonth"
+        :card-exp-year="cdExpYear"
+        :card-ccv="cdCcv"
+        :format-mode="formatMode"
+        :flip-card="flipCardCcvTrigger"
+        :flip-on-hover="flipOnHover"
+        :card-background="cardBackground"
+        :card-color="cardColor"
+        :card-radius="cardRadius"
+        :card-shadow="cardShadow"
+        :card-ccv-color="cardCcvColor"
+        :card-holder-text="cardHolderText"
+        :card-expiration-text="cardExpirationText"
+        :card-ccv-text="cardCcvText"
+        @updated-card-config="changeCardConfig"
+      />
 
-      <div class="vg-credit-card__form-items">
-        <span class="vg-credit-card__form-items--text">{{ formHolderText }}</span>
-        <input
-          v-model="cdName"
-          type="text"
-          :style="[inputStyle, isActiveInputName]"
-          class="vg-credit-card__form-items--input"
-          @focus="activeName = true"
-          @blur="activeName = false"
-        />
-      </div>
-
-      <div class="vg-credit-card__form-flexbox">
+      <div
+        v-if="showForm"
+        :vg-id="`${vgId}-form`"
+        :style="[formStyleBg, formStyleColor, formStyleBorderRadius, formStyleShadow]"
+        class="vg-credit-card__form vg-reset"
+      >
         <div class="vg-credit-card__form-items">
-          <span class="vg-credit-card__form-items--text">{{ formExpMonthText }}</span>
-          <select
-            id=""
-            v-model="cdExpMonth"
-            name=""
-            :style="[inputStyle, isActiveInputMonth]"
-            class="vg-credit-card__form-items--select"
-            @focus="activeMonth = true"
-            @blur="activeMonth = false"
-          >
-            <option
-              value="month"
-              selected
-              disabled
-            >
-              {{ formExpMonthDefaultText }}
-            </option>
-            <option
-              v-for="(item, index) in monthsList"
-              :key="index"
-              :value="item"
-            >
-              {{ item }}
-            </option>
-          </select>
-        </div>
-
-        <div class="vg-credit-card__form-items">
-          <span class="vg-credit-card__form-items--text">{{ formExpYearText }}</span>
-          <select
-            id=""
-            v-model="cdExpYear"
-            name=""
-            :style="[inputStyle, isActiveInputYear]"
-            class="vg-credit-card__form-items--select"
-            @focus="activeYear = true"
-            @blur="activeYear = false"
-          >
-            <option
-              value="year"
-              selected
-              disabled
-            >
-              {{ formExpYearDefaultText }}
-            </option>
-            <option
-              v-for="(item, index) in yearsList"
-              :key="index"
-              :value="item.toString()"
-            >
-              {{ item }}
-            </option>
-          </select>
-        </div>
-
-        <div class="vg-credit-card__form-items">
-          <span class="vg-credit-card__form-items--text">{{ formCcvText }}</span>
+          <span class="vg-credit-card__form-items--text">{{ formNumberText }}</span>
           <input
-            v-model="cdCcv"
+            v-model="cdNumber"
+            v-mask="getCardMask"
             type="text"
-            maxlength="4"
-            :style="[inputStyle, isActiveInputCcv]"
+            :maxlength="getMaxCardNumber"
+            :style="[inputStyle, isActiveInputNumber]"
             class="vg-credit-card__form-items--input"
-            @click="updateCcv(true)"
-            @blur="updateCcv(false)"
+            autocomplete="off"
+            @active="activeNumber = true"
+            @focus="activeNumber = true"
+            @blur="activeNumber = false"
           />
+        </div>
+
+        <div class="vg-credit-card__form-items">
+          <span class="vg-credit-card__form-items--text">{{ formHolderText }}</span>
+          <input
+            v-model="cdName"
+            type="text"
+            :style="[inputStyle, isActiveInputName]"
+            class="vg-credit-card__form-items--input"
+            @focus="activeName = true"
+            @blur="activeName = false"
+          />
+        </div>
+
+        <div class="vg-credit-card__form-flexbox">
+          <div class="vg-credit-card__form-items">
+            <span class="vg-credit-card__form-items--text">{{ formExpMonthText }}</span>
+            <select
+              id=""
+              v-model="cdExpMonth"
+              name=""
+              :style="[inputStyle, isActiveInputMonth]"
+              class="vg-credit-card__form-items--select"
+              @focus="activeMonth = true"
+              @blur="activeMonth = false"
+            >
+              <option
+                value="month"
+                selected
+                disabled
+              >
+                {{ formExpMonthDefaultText }}
+              </option>
+              <option
+                v-for="(item, index) in monthsList"
+                :key="index"
+                :value="item"
+              >
+                {{ item }}
+              </option>
+            </select>
+          </div>
+
+          <div class="vg-credit-card__form-items">
+            <span class="vg-credit-card__form-items--text">{{ formExpYearText }}</span>
+            <select
+              id=""
+              v-model="cdExpYear"
+              name=""
+              :style="[inputStyle, isActiveInputYear]"
+              class="vg-credit-card__form-items--select"
+              @focus="activeYear = true"
+              @blur="activeYear = false"
+            >
+              <option
+                value="year"
+                selected
+                disabled
+              >
+                {{ formExpYearDefaultText }}
+              </option>
+              <option
+                v-for="(item, index) in yearsList"
+                :key="index"
+                :value="item.toString()"
+              >
+                {{ item }}
+              </option>
+            </select>
+          </div>
+
+          <div class="vg-credit-card__form-items">
+            <span class="vg-credit-card__form-items--text">{{ formCcvText }}</span>
+            <input
+              v-model="cdCcv"
+              type="text"
+              maxlength="4"
+              :style="[inputStyle, isActiveInputCcv]"
+              class="vg-credit-card__form-items--input"
+              @click="updateCcv(true)"
+              @blur="updateCcv(false)"
+            />
+          </div>
         </div>
       </div>
     </div>
-  </div> 
+  </div>
 </template>
 <script>
 import {
@@ -537,7 +539,6 @@ export default defineComponent ({
     }
 
     watch(cardNumber, (value) => {
-      console.log(cdNumber.value)
       cdNumber.value = value
       sendValues()
     })
@@ -602,7 +603,39 @@ export default defineComponent ({
 })
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+.vg-wrapper {
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.vg-reset {
+  font-size: 16px;
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: light;
+  line-height: 1.42857143;
+  color: #333;
+  
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  *,
+  *::before,
+  *::after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+}
+
 .vg-credit-card {
   margin: 0;
   padding: 0;
@@ -610,8 +643,8 @@ export default defineComponent ({
   line-height: 1.42857143;
   font-family: 'Lato', sans-serif;
   display: inline-block;
+    text-align: center;
 }
-
 .vg-credit-card .vg-credit-card__form {
   padding: 20px;
   width: 600px;

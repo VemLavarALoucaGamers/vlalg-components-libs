@@ -74,7 +74,7 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
-.test-page {
+/*.test-page {
   .test-page__title {
     font-family: 'Lato', sans-serif;
     margin-top: 40px;
@@ -104,5 +104,5 @@ export default defineComponent({
   .test-page__content {
     text-align: center;
   }
-}
+}*/
 </style>

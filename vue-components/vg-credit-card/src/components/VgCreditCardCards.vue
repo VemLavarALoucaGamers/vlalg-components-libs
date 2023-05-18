@@ -1,77 +1,79 @@
 <template>
-  <div
-    :id="vgId"
-    class="vg-credit-card__card"
-  >
+  <div class="vg-wrapper">
     <div
-      class="vg-credit-card__card-faces"
-      @mouseover="flipCardOnHover('over')"
-      @mouseleave="flipCardOnHover('leave')"
+      :id="vgId"
+      class="vg-credit-card__card vg-reset"
     >
       <div
-        ref="front"
-        :style="[cardStyleBg, cardStyleColor, cardStyleBorderRadius, cardStyleShadow]"
-        class="vg-credit-card__card-faces--front"
+        class="vg-credit-card__card-faces"
+        @mouseover="flipCardOnHover('over')"
+        @mouseleave="flipCardOnHover('leave')"
       >
-        <div class="vg-credit-card__front-images">
-          <img
-            :src="getCardChipImage"
-            alt=""
-            class="vg-credit-card__front-images--chip"
-          />
-          <img
-            :src="getCardTypeImage"
-            alt=""
-            class="vg-credit-card__front-images--brand"
-          />
-        </div>
-
         <div
-          :class="['vg-credit-card__front-number', hasNumber ? 'has-number' : 'without-number' , hasAllNumbers ? 'has-all-numbers' : '']"
+          ref="front"
+          :style="[cardStyleBg, cardStyleColor, cardStyleBorderRadius, cardStyleShadow]"
+          class="vg-credit-card__card-faces--front"
         >
-          {{ getMaskedCardNumber }}
-        </div>
-
-        <div class="vg-credit-card__front-infos">
-          <div class="vg-credit-card__front-column vg-credit-card__front-column--name">
-            <span class="vg-credit-card__front-column-title">{{ textCardHolder }}</span>
-            <div class="vg-credit-card__front-column-value--name">
-              {{ getHolderName }}
-            </div>
-          </div>
-
-          <div class="vg-credit-card__front-column vg-credit-card__front-column--expiration">
-            <span class="vg-credit-card__front-column-title">{{ textCardExpiration }}</span>
-            <div class="vg-credit-card__front-column-value">
-              {{ formatedExpiration }}
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div 
-        ref="back"
-        :style="[cardStyleBg, cardStyleColor, cardStyleBorderRadius, cardStyleShadow]"
-        class="vg-credit-card__card-faces--back"
-      >
-        <div class="vg-credit-card__back-stripe">
-        </div>
-        <div class="vg-credit-card__back-column">
-          <span class="vg-credit-card__back-column-title">{{ textCardCcv }}</span>
-          <div class="vg-credit-card__back-column-info">
-            <span
-              :style="[cardCcvStyleColor]"
-              class="vg-credit-card__back-column-info--value"
-            >
-              {{ cardCcv }}
-            </span>
-            
+          <div class="vg-credit-card__front-images">
             <img
-              src="@images/pattern.png"
+              :src="getCardChipImage"
               alt=""
-              class="vg-credit-card__back-column-info--image"
-              style="position: absolute; z-index: 0; left: 0; top: 0; right: 0;"
+              class="vg-credit-card__front-images--chip"
             />
+            <img
+              :src="getCardTypeImage"
+              alt=""
+              class="vg-credit-card__front-images--brand"
+            />
+          </div>
+
+          <div
+            :class="['vg-credit-card__front-number', hasNumber ? 'has-number' : 'without-number' , hasAllNumbers ? 'has-all-numbers' : '']"
+          >
+            {{ getMaskedCardNumber }}
+          </div>
+
+          <div class="vg-credit-card__front-infos">
+            <div class="vg-credit-card__front-column vg-credit-card__front-column--name">
+              <span class="vg-credit-card__front-column-title">{{ textCardHolder }}</span>
+              <div class="vg-credit-card__front-column-value--name">
+                {{ getHolderName }}
+              </div>
+            </div>
+
+            <div class="vg-credit-card__front-column vg-credit-card__front-column--expiration">
+              <span class="vg-credit-card__front-column-title">{{ textCardExpiration }}</span>
+              <div class="vg-credit-card__front-column-value">
+                {{ formatedExpiration }}
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div 
+          ref="back"
+          :style="[cardStyleBg, cardStyleColor, cardStyleBorderRadius, cardStyleShadow]"
+          class="vg-credit-card__card-faces--back"
+        >
+          <div class="vg-credit-card__back-stripe">
+          </div>
+          <div class="vg-credit-card__back-column">
+            <span class="vg-credit-card__back-column-title">{{ textCardCcv }}</span>
+            <div class="vg-credit-card__back-column-info">
+              <span
+                :style="[cardCcvStyleColor]"
+                class="vg-credit-card__back-column-info--value"
+              >
+                {{ cardCcv }}
+              </span>
+              
+              <img
+                src="@images/pattern.png"
+                alt=""
+                class="vg-credit-card__back-column-info--image"
+                style="position: absolute; z-index: 0; left: 0; top: 0; right: 0;"
+              />
+            </div>
           </div>
         </div>
       </div>
@@ -290,8 +292,6 @@ export default defineComponent ({
 
       const model = (hasChip && chip === 'two') ? 'two' : 'one'
 
-      console.log('chip -> ', imagesChip[model])
-
       return imagesChip[model]
     })
 
@@ -463,7 +463,37 @@ export default defineComponent ({
 })
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+.vg-wrapper {
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.vg-reset {
+  font-size: 16px;
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: light;
+  line-height: 1.42857143;
+  color: #333;
+  
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  *,
+  *::before,
+  *::after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+}
 .vg-credit-card__card {
   margin: 0;
   padding: 0;

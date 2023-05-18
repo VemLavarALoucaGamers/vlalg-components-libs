@@ -1,7 +1,7 @@
 {
   "name": "@vemlavaraloucagamers/vg-credit-card",
   "private": false,
-  "version": "2.0.0",
+  "version": "2.0.11",
   "type": "module",
   "main": "./dist/vg-credit-card.umd.js",
   "module": "./dist/vg-credit-card.js",
