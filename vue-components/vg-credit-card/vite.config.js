@@ -2,6 +2,7 @@ import { defineConfig } from 'vite';
 import vue from '@vitejs/plugin-vue';
 import { nodeResolve } from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
+import image from '@rollup/plugin-image';
 import path from 'path';
 
 // https://vitejs.dev/config/
@@ -24,9 +25,17 @@ export default defineConfig({
       },
     },
   },
+  external: [
+    '@vemlavaraloucagamers/helpers',
+    'vue-the-mask',
+    /node_modules/
+  ],
   plugins: [
-    nodeResolve(),
+    nodeResolve({
+      moduleDirectories: ['node_modules']
+    }),
     commonjs(),
+    image(),
     vue()
   ],
   resolve: {
@@ -34,7 +43,7 @@ export default defineConfig({
       '@': path.resolve(__dirname, './src'),
       '@components': path.resolve(__dirname, 'src', 'components'),
       '@helpers': path.resolve(__dirname, 'src', 'helpers'),
-      '@images': path.resolve(__dirname, 'images'),
+      '@images': path.resolve(__dirname, 'src', 'images'),
     },
   },
 });

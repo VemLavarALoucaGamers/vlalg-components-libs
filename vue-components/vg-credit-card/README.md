@@ -23,6 +23,7 @@ import { createApp } from 'vue'
 import App from './App.vue'
 
 import VgCreditCard from '@vemlavaraloucagamers/vg-credit-card'
+import "@vemlavaraloucagamers/vg-credit-card/dist/style.css";
 
 const app = createApp(App)
 app.use(VgCreditCard)

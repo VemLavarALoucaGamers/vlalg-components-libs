@@ -82,6 +82,15 @@
 import { computed, defineComponent, reactive, ref, watch, toRefs, onMounted } from 'vue';
 import { isNumber } from '@vemlavaraloucagamers/helpers'
 
+import imagesChipOne from '../images/chip_one.png'
+import imagesChipTwo from '../images/chip_two.png'
+
+import imagesBrandsVisa from '../images/visa.png'
+import imagesBrandsAmex from '../images/amex.png'
+import imagesBrandsMastercard from '../images/mastercard.png'
+import imagesBrandsDiscover from '../images/discover.png'
+import imagesBrandsTroy from '../images/troy.png'
+
 const defaultCardStyle = {
   bg: 'linear-gradient(45deg, blueviolet, deeppink)',
   color: '#fff',
@@ -220,6 +229,19 @@ export default defineComponent ({
       '12',
     ])
 
+    const imagesChip = reactive({
+      one: imagesChipOne,
+      two: imagesChipTwo
+    })
+
+    const imagesBrands = reactive({
+      visa: imagesBrandsVisa,
+      amex: imagesBrandsAmex,
+      mastercard: imagesBrandsMastercard,
+      discover: imagesBrandsDiscover,
+      troy: imagesBrandsTroy
+    })
+
     const amexConfig = reactive({
       mask: '#### ###### #####',
       minMask: 4,
@@ -259,7 +281,7 @@ export default defineComponent ({
       return typeName
     })
     const getCardTypeImage = computed(() => {
-      return `images/${getCardType.value}.png`
+      return imagesBrands[getCardType.value]
     })
 
     const getCardChipImage = computed(() => {
@@ -268,7 +290,9 @@ export default defineComponent ({
 
       const model = (hasChip && chip === 'two') ? 'two' : 'one'
 
-      return `images/chip_${model}.png`
+      console.log('chip -> ', imagesChip[model])
+
+      return imagesChip[model]
     })
 
     const getMaskedCardNumber = computed(() => {

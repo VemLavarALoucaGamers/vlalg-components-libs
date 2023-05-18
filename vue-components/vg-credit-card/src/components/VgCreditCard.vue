@@ -145,6 +145,7 @@ import {
   watch,
   onMounted
 } from 'vue';
+import { mask } from 'vue-the-mask'
 import { isNumber } from '@vemlavaraloucagamers/helpers'
 
 const generateYearList = () => {
@@ -179,6 +180,7 @@ export default defineComponent ({
   components: {
     VgCreditCardCards: defineAsyncComponent(() => import('@components/VgCreditCardCards.vue'))
   },
+  directives: { mask },
   inheritAttrs: false,
   emits: ['card-values'],
   props: {
@@ -367,7 +369,7 @@ export default defineComponent ({
     const activeYear = ref(false)
     const activeCcv = ref(false)
 
-    const cardConfig = reactive({
+    const cardConfig = ref({
       mask: '################',
       minMask: 0,
       maxMask: 0,
@@ -394,11 +396,11 @@ export default defineComponent ({
     })
 
     const getMaxCardNumber = computed(() => {
-      return cardConfig.maxNumber
+      return cardConfig.value.maxNumber
     })
 
     const getCardMask = computed(() => {
-      return cardConfig.mask
+      return cardConfig.value.mask
     })
 
     const getHolderName = computed(() => {
@@ -513,10 +515,10 @@ export default defineComponent ({
     })
 
     const changeCardConfig = ($event) => {
-      cardConfig.mask = $event.mask
-      cardConfig.minMask = $event.minMask
-      cardConfig.maxMask = $event.maxMask
-      cardConfig.maxNumber = $event.maxNumber
+      cardConfig.value.mask = $event.mask
+      cardConfig.value.minMask = $event.minMask
+      cardConfig.value.maxMask = $event.maxMask
+      cardConfig.value.maxNumber = $event.maxNumber
     }
 
     const fixYear = (value) => {
@@ -535,6 +537,7 @@ export default defineComponent ({
     }
 
     watch(cardNumber, (value) => {
+      console.log(cdNumber.value)
       cdNumber.value = value
       sendValues()
     })
