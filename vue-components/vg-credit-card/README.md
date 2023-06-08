@@ -1,7 +1,7 @@
 # Vg-Credit-Card
 > This component is only for [Vue.js 3+](https://vuejs.org/)
 <p align="center">
-  <img src="https://github.com/VemLavarALoucaGamers/vlalg-frontend-components/raw/main/vue-components/vg-credit-card/src/images/example.gif" width="200">
+  <img src="https://github.com/VemLavarALoucaGamers/vlalg-frontend-components/raw/main/vue-components/vg-credit-card/src/images/example.gif" width="400">
 </p>
 
 This is a component credit card.
