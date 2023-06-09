@@ -1,4 +1,12 @@
 # Log-Manager
+
+<div align="center">
+
+![npm](https://img.shields.io/npm/v/@vemlavaraloucagamers/md-log-manager?style=for-the-badge) ![npm](https://img.shields.io/npm/dm/@vemlavaraloucagamers/md-log-manager?style=for-the-badge) ![Snyk Vulnerabilities for npm package](https://img.shields.io/snyk/vulnerabilities/npm/@vemlavaraloucagamers/md-log-manager?label=npm%20vulnerabilities&style=for-the-badge) ![Snyk Vulnerabilities for GitHub Repo](https://img.shields.io/snyk/vulnerabilities/github/VemLavarALoucaGamers/vlalg-frontend-components?label=Repo%20Vulnerabilities&style=for-the-badge)
+</div>
+
+<br />
+
 <p align="center">
 <img src="https://github.com/VemLavarALoucaGamers/vlalg-frontend-components/raw/main/libs/log-manager/images/example.png" width="300">
 </p>

@@ -1,5 +1,15 @@
 # Vg-Gradient-Text
 > This component is only for [Vue.js 3+](https://vuejs.org/)
+
+<br />
+
+<div align="center">
+
+![npm](https://img.shields.io/npm/v/@vemlavaraloucagamers/vg-gradient-text?style=for-the-badge) ![npm](https://img.shields.io/npm/dm/@vemlavaraloucagamers/vg-gradient-text?style=for-the-badge) ![Snyk Vulnerabilities for npm package](https://img.shields.io/snyk/vulnerabilities/npm/@vemlavaraloucagamers/vg-gradient-text?label=npm%20vulnerabilities&style=for-the-badge) ![Snyk Vulnerabilities for GitHub Repo](https://img.shields.io/snyk/vulnerabilities/github/VemLavarALoucaGamers/vlalg-frontend-components?label=Repo%20Vulnerabilities&style=for-the-badge)
+</div>
+
+<br />
+
 <p align="center">
   <img src="https://github.com/VemLavarALoucaGamers/vlalg-frontend-components/raw/main/vue-components/vg-gradient-text/images/example.png" width="200">
   <img src="https://github.com/VemLavarALoucaGamers/vlalg-frontend-components/raw/main/vue-components/vg-gradient-text/images/example2.png" width="200">

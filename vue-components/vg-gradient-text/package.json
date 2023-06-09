@@ -1,7 +1,7 @@
 {
   "name": "@vemlavaraloucagamers/vg-gradient-text",
   "private": false,
-  "version": "1.0.2",
+  "version": "1.0.3",
   "type": "module",
   "main": "./dist/vg-gradient-text.umd.js",
   "module": "./dist/vg-gradient-text.js",
