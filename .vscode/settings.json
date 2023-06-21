@@ -1,14 +1,5 @@
 {
-  "editor.formatOnPaste": false, // required
-  "editor.formatOnSave": false,
-  "[javascript]": {
-    "editor.tabSize": 4,
-    "editor.insertSpaces": true
-  },
-  "[vue]": {
-    "editor.tabSize": 4,
-    "editor.insertSpaces": true
-  },
+  "editor.formatOnPaste": false,
   "eslint.alwaysShowStatus": true,
   "files.autoSave": "onFocusChange",
   "emmet.includeLanguages": {
@@ -57,12 +48,92 @@
   },
   "window.zoomLevel": 0,
   "editor.find.globalFindClipboard": true,
-  "editor.fontLigatures": true,
   "editor.formatOnType": true,
   "team.showWelcomeMessage": false,
   "git.autofetch": true,
-  "workbench.startupEditor": "newUntitledFile",
+  "launch": {},
+  "javascript.validate.enable": true,
+  "javascript.suggestionActions.enabled": false,
+  "editor.insertSpaces": false,
+  "editor.detectIndentation": false,
+  "vetur.format.defaultFormatter.sass": "sass-formatter",
+  "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
+  "eslint.options": {
+    "extensions": [".js", ".vue"]
+  },
+  "eslint.workingDirectories": [
+    {"mode": "auto"}
+  ],
+  "eslint.probe": ["javascript", "html", "vue"],
+  "scss.lint.emptyRules": "ignore",
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.tabSize": 2,
+  "editor.renderWhitespace": "none",
+  "files.insertFinalNewline": true,
+  "files.eol": "\n",
+  "typescript.suggest.paths": false,
+  "javascript.suggest.paths": false,
+  "liveServer.settings.donotShowInfoMsg": true,
+  "sync.gist": "d66fc80641655675731eb3d2327dc5b8",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "editor.suggestSelection": "first",
+  "cSpell.language": "en,pt",
+  "cSpell.enableFiletypes": [
+    "dockercompose",
+    "dockerfile",
+    "editorconfig",
+    "env",
+    "makefile",
+    "mongodb",
+    "sass",
+    "sql",
+    "vue",
+    "vue-html",
+    "xml"
+  ],
+  "cSpell.userWords": ["dont", "funcao", "objkeys", "Vlalg", "VUEX"],
+  "sync.quietSync": true,
+  "sync.forceDownload": true,
+  "sync.forceUpload": true,
+  "sync.autoUpload": true,
+  "sync.autoDownload": true,
+  "vetur.grammar.customBlocks": {
+    "docs": "md",
+    "i18n": "json",
+    "preview-props": "json"
+  },
+  // Set the default
+  "editor.formatOnSave": false,
+  // Enable per-language
+  "[javascript]": {
+    "editor.formatOnSave": true,
+    "editor.tabSize": 4,
+    "editor.insertSpaces": true
+  },
+  "[vue]": {
+    "editor.formatOnSave": true,
+    "editor.tabSize": 4,
+    "editor.insertSpaces": true
+  },
+  "workbench.editor.splitInGroupLayout": "vertical",
+  "vetur.validation.template": true,
+  "liveServer.settings.donotVerifyTags": true,
+  "vetur.trace.server": "messages",
+  "vetur.format.defaultFormatter.js": "vscode-typescript",
+  "security.workspace.trust.untrustedFiles": "open",
+  "npm.keybindingsChangedWarningShown": true,
+  "codesnap.boxShadow": "#50fa7b",
+  "codesnap.backgroundColor": "#282a36",
+  "workbench.productIconTheme": "icons-carbon",
+  "workbench.iconTheme": "vscode-icons",
+  "eslint.validate": [
+    "vue",
+    "html",
+    "javascript",
+    "typescript"
+  ],
   "editor.codeActionsOnSave": {
+    "editor.formatOnSave": true,
     // For ESLint
     "source.fixAll.eslint": true,
     // For TSLint
@@ -70,31 +141,135 @@
     // For Stylelint
     "source.fixAll.stylelint": true
   },
-  "launch": {},
-  "workbench.colorCustomizations": {},
-  "javascript.validate.enable": true,
-  "javascript.suggestionActions.enabled": false,
-  "editor.insertSpaces": false,
-  "editor.detectIndentation": false,
+  "typescript.preferences.importModuleSpecifier": "relative",
+  "editor.inlayHints.enabled": "off",
+  "editor.guides.indentation": false,
+  "editor.guides.bracketPairs": false,
+  "editor.wordWrap": "off",
+  "diffEditor.wordWrap": "off",
+  "blockman.n03MaxDepth": 10,
+  "blockman.n22AnalyzeCurlyBrackets": true,
+  "blockman.n23AnalyzeSquareBrackets": false,
+  "blockman.n24AnalyzeRoundBrackets": false,
+  "blockman.n25AnalyzeTags": true,
+  "blockman.n26AnalyzeIndentDedentTokens": true,
+  "blockman.n04Sub05MinDistanceBetweenRightSideEdges": 4,
+  "blockman.n04ColorComboPreset": "Classic Dark 1 (Gradients)",
+  "blockman.n19CustomColorOfBlockBorder": "linear-gradient(to right, yellow, blue)",
+  "blockman.n06CustomColorOfDepth1": "red",
+  "blockman.n07CustomColorOfDepth2": "red",
+  "blockman.n33A03B1FromDepth0ToInwardForFocusTreeBorders": "30,1,0,2; neutral > linear-gradient(to right, rgb(144, 54, 8), rgb(48, 36, 116))",
+  "blockman.n27AlsoRenderBlocksInsideSingleLineAreas": true,
+  "workbench.colorCustomizations": {
+    "editor.lineHighlightBorder": "#9fced11f",
+    "editor.lineHighlightBackground": "#1073cf3d",
+    "terminal.background":"#090300",
+    "terminal.foreground":"#A5A2A2",
+    "terminalCursor.background":"#A5A2A2",
+    "terminalCursor.foreground":"#A5A2A2",
+    "terminal.ansiBlack":"#090300",
+    "terminal.ansiBlue":"#01A0E4",
+    "terminal.ansiBrightBlack":"#5C5855",
+    "terminal.ansiBrightBlue":"#01A0E4",
+    "terminal.ansiBrightCyan":"#B5E4F4",
+    "terminal.ansiBrightGreen":"#01A252",
+    "terminal.ansiBrightMagenta":"#A16A94",
+    "terminal.ansiBrightRed":"#DB2D20",
+    "terminal.ansiBrightWhite":"#F7F7F7",
+    "terminal.ansiBrightYellow":"#FDED02",
+    "terminal.ansiCyan":"#B5E4F4",
+    "terminal.ansiGreen":"#01A252",
+    "terminal.ansiMagenta":"#A16A94",
+    "terminal.ansiRed":"#DB2D20",
+    "terminal.ansiWhite":"#A5A2A2",
+    "terminal.ansiYellow":"#FDED02"
+  },
+  "volar.inlayHints.eventArgumentInInlineHandlers": false,
+  "editor.rulers": [
+    {
+      "column": 120,
+      "color": "#ff00FF"
+    }
+  ],
+  "editor.fontLigatures": false,
+  "terminal.integrated.fontFamily": "Anonymice Nerd Font Mono",
+  "terminal.integrated.fontSize": 15,
+  "terminal.integrated.fontWeight": "normal",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "workbench.colorTheme": "GitHub Dark Default",
+  "terminal.integrated.profiles.windows": {
+    "GitBash": {
+      "path": "E:\\Program Files\\Git\\bin\\bash.exe"
+    }
+  },
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "gitlens.advanced.messages": {
+    "suppressGitMissingWarning": true
+  },
+  "bracket-pair-colorizer-2.depreciation-notice": false,
+  "workbench.startupEditor": "none",
+  "splitHTMLAttributes.closingBracketOnNewLine": true,
+  "vscode-edge-devtools.webhint": false,
+  "liveshare.connectionMode": "relay",
+  "editor.minimap.size": "fill",
+	"rapidapi.terminalLink.enabled": false,
+	"emmet.preferences": {
+		"includeLanguages": {
+			"html": "html",
+			"css": "css",
+			"javascript": "javascriptreact",
+			"vue-html": "html",
+  		"vue": "html",
+			"postcss": "css"
+		}
+	},
+	"postcss.validate": false,
+	"scss.showErrors": true,
+	"npm-intellisense.importES6": true,
+  "npm-intellisense.importQuotes": "'",
+  "npm-intellisense.importLinebreak": ";\r\n",
+  "npm-intellisense.importDeclarationType": "const",
+	"npm-intellisense.scanDevDependencies": true,
+	"html-css-class-completion.enableEmmetSupport": true,
+	 // Scans builtin modules as well
+	 "node-module-intellisense.scanBuiltinModules": true,
+	 // Scans devDependencies as well
+	 "node-module-intellisense.scanDevDependencies": true,
+	 // Scans file modules as well
+	 "node-module-intellisense.scanFileModules": true,
+	 /**
+		* Scans alternative module paths (eg. Search on ${workspcaceRoot}/lib).
+		* Useful when using packages like (https://www.npmjs.com/package/app-module-path) to manage require paths folder.
+		**/
+	 "node-module-intellisense.modulePaths": [],
+	 // File module extensions
+	 "node-module-intellisense.fileModuleExtensions": [
+		 ".js",
+		 ".jsx",
+		 ".ts",
+		 ".d.ts",
+		 ".tsx",
+		 ".vue",
+		 ".json"
+	],
+	"hediet.vscode-drawio.resizeImages": null,
+  "prettier.htmlWhitespaceSensitivity": "strict",
+  /*
   "vetur.format.defaultFormatter.html": "prettyhtml",
   "vetur.format.defaultFormatter.css": "prettier",
   "vetur.format.defaultFormatter.postcss": "prettier",
   "vetur.format.defaultFormatter.scss": "prettier",
-  "vetur.format.defaultFormatter.js": "prettier",
-  "vetur.format.defaultFormatter.sass": "sass-formatter",
-  "vetur.validation.template": true,
   "vetur.format.defaultFormatterOptions": {
     "prettyhtml": {
       "printWidth": 120,
       "singleQuote": false // Prefer double quotes over single quotes
     }
   },
-  "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
-  "eslint.validate": ["javascript", "html", "vue"],
-  "eslint.options": {
-    "extensions": [".js", ".vue"]
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "eslint.probe": ["javascript", "html", "vue"],
-  "prettier.htmlWhitespaceSensitivity": "strict",
-  "scss.lint.emptyRules": "ignore",
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  */
 }
