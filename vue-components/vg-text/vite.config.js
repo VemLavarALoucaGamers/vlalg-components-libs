@@ -9,8 +9,8 @@ export default defineConfig({
   build: {
     lib: {
       entry: path.resolve(__dirname, 'src/install.js'),
-      name: 'VgGradientText',
-      fileName: 'vg-gradient-text',
+      name: 'VgText',
+      fileName: 'vg-text',
       formats: ['umd', 'es'],
     },
     rollupOptions: {

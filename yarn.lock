@@ -1719,6 +1719,11 @@
   dependencies:
     "@types/node" "*"
 
+"@vemlavaraloucagamers/md-log-manager@1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@vemlavaraloucagamers/md-log-manager/-/md-log-manager-1.0.0.tgz#d8fc8eeee1fe2e123e743e4cb30c3f772f3b7e24"
+  integrity sha512-qTbrK8kk1lS8X0xiQpq+kGg+RHXvRyQ7txd8MD/d/HBND2LloDuINLf3ra7cZxvAQ19BttXMkhueW0/3+mekBA==
+
 "@vitejs/plugin-vue@^3.0.3":
   version "3.1.2"
   resolved "https://registry.npmjs.org/@vitejs/plugin-vue/-/plugin-vue-3.1.2.tgz"

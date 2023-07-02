@@ -4,7 +4,7 @@
       <div class="col-md-10 col-md-offset-1 test-page__title">
         <h2>Test page</h2>
         <p class="test-page__component-name">
-          <strong>Component:</strong> VgGradientText
+          <strong>Component:</strong> VgText
         </p>
         <p class="test-page__warning">
           Warning: Look at the console to see the click event
@@ -17,6 +17,9 @@
         class="col-md-10 col-md-offset-1 test-page__content"
         style="margin-top: 50px; margin-bottom: 50px; overflow: hidden;"
       >
+        <h4 style="text-align: left; font-weight: 800;">
+          VgGradientText
+        </h4>
         <VgGradientText
           vg-id="asdas"
           alignment="center"
@@ -30,6 +33,21 @@
             i love to<br />drink coffee<br />very much
           </template>
         </VgGradientText>
+
+        <br /><br /><br /><br />
+        <h4 style="text-align: left; font-weight: 800;">
+          VgHighlightSelectedText
+        </h4>
+        <p style="font-size: 26px !important;">
+          Select 
+          <VgHighlightSelectedText
+            vg-id="asdas"
+            background-color="tomato"
+            text-color="blue"
+          >
+            this part of the text
+          </VgHighlightSelectedText> to see it in another color
+        </p>
       </div>
     </div>
   </div>
@@ -40,7 +58,8 @@ import { defineComponent, defineAsyncComponent } from 'vue';
 export default defineComponent({
   name: 'App',
   components: {
-    VgGradientText: defineAsyncComponent(() => import('@components/VgGradientText.vue'))
+    VgGradientText: defineAsyncComponent(() => import('@components/VgGradientText.vue')),
+    VgHighlightSelectedText: defineAsyncComponent(() => import('@components/VgHighlightSelectedText.vue'))
   },
   emits: [],
   props: {},

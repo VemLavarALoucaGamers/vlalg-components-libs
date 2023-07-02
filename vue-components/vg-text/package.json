@@ -1,17 +1,17 @@
 {
-  "name": "@vemlavaraloucagamers/vg-gradient-text",
+  "name": "@vemlavaraloucagamers/vg-text",
   "private": false,
-  "version": "1.0.3",
+  "version": "1.0.0",
   "type": "module",
-  "main": "./dist/vg-gradient-text.umd.js",
-  "module": "./dist/vg-gradient-text.js",
+  "main": "./dist/vg-text.umd.js",
+  "module": "./dist/vg-text.js",
   "files": [
     "dist"
   ],
   "exports": {
     ".": {
-      "import": "./dist/vg-gradient-text.js",
-      "require": "./dist/vg-gradient-text.umd.js"
+      "import": "./dist/vg-text.js",
+      "require": "./dist/vg-text.umd.js"
     },
     "./dist/style.css": "./dist/style.css"
   },
@@ -48,12 +48,13 @@
     "type": "git",
     "url": "https://github.com/VemLavarALoucaGamers/vlalg-frontend-components"
   },
-  "homepage": "https://github.com/VemLavarALoucaGamers/vlalg-frontend-components/tree/main/vue-components/vg-gradient-text",
+  "homepage": "https://github.com/VemLavarALoucaGamers/vlalg-frontend-components/tree/main/vue-components/vg-text",
   "keywords": [
     "vuejs",
     "vue js",
     "vue plugin",
-    "gradient text",
+    "vg text",
+    "text",
     "components",
     "component",
     "vue components",
