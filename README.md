@@ -1,4 +1,4 @@
-# vlalg-frontend-components
+# vlalg-components-libs
 > This components is only for [Vue.js 3+](https://vuejs.org/)
 
 ## Folders
