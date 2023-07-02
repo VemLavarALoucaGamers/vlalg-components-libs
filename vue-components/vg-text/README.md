@@ -119,7 +119,7 @@ This is a component Gradient Text.
 This is a component Highlight Selected Text.
 
 <p align="center">
-  <img src="https://github.com/VemLavarALoucaGamers/vlalg-frontend-components/raw/main/vue-components/vg-text/images/VgHighlightSelectedText.gif" width="200">
+  <img src="https://github.com/VemLavarALoucaGamers/vlalg-frontend-components/raw/main/vue-components/vg-text/images/VgHighlightSelectedText.gif" width="400">
 </p>
 
 ```jsx
@@ -163,8 +163,8 @@ This is a component Highlight Selected Text.
 
 ## Example
 
-<p align="left">
-  <img src="https://github.com/VemLavarALoucaGamers/vlalg-frontend-components/raw/main/vue-components/vg-text/images/VgHighlightSelectedText_example.gif" width="200">
+<p align="center">
+  <img src="https://github.com/VemLavarALoucaGamers/vlalg-frontend-components/raw/main/vue-components/vg-text/images/VgHighlightSelectedText_example.gif" width="400">
 </p>
 
 ```jsx
