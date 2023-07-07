@@ -6,7 +6,10 @@
     "javascript": "javascriptreact",
     "vue-html": "html",
     "plaintext": "jade",
-    "edge": "html"
+    "edge": "html",
+    "html": "html",
+    "css": "css",
+    "vue": "html"
   },
   "emmet.syntaxProfiles": {
     "javascript": "jsx"
@@ -254,6 +257,7 @@
 	],
 	"hediet.vscode-drawio.resizeImages": null,
   "prettier.htmlWhitespaceSensitivity": "strict",
+  "editor.suggestOnTriggerCharacters": true,
   /*
   "vetur.format.defaultFormatter.html": "prettyhtml",
   "vetur.format.defaultFormatter.css": "prettier",
