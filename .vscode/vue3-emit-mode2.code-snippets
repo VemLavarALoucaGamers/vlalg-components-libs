@@ -1,0 +1,16 @@
+{
+	"Vue 3: emit - mode 2": {
+    "scope": "vue,javascript,html,nuxt",
+    "prefix": "vue3-emit-2",
+    "body": [
+      "/*",
+      " * import the emit -> `import { emit } from 'vue'`",
+      " *",
+      " * Create the emit",
+      " * defineComponent({ emits: ['eventName'], ... })",
+      "*/",
+      "emit('$1', $2)",
+    ],
+    "description": "Vue 3 (emit) mode 2 for <script> with defineComponent"
+  }
+}

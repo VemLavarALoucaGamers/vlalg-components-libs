@@ -1,0 +1,12 @@
+{
+	"Vue 3: computed": {
+    "scope": "vue,javascript,html,nuxt",
+    "prefix": "vue3-computed",
+    "body": [
+      "const $1 = computed(() => {",
+      "  return $2",
+      "})"
+    ],
+    "description": "Vue 3 (computed)"
+  }
+}

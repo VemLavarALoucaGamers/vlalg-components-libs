@@ -1,0 +1,10 @@
+{
+	"Vue 3: defineProps - mode 3": {
+    "scope": "vue,javascript,html,nuxt",
+    "prefix": "vue3-defineProps-3",
+    "body": [
+      "const props = defineProps($3)"
+    ],
+    "description": "Vue 3 (defineProps) mode 3 for <script setup>"
+  }
+}

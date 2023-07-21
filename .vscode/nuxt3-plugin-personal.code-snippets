@@ -1,0 +1,19 @@
+{
+  "Nuxt 3: plugin - personal": {
+    "scope": "vue,javascript,html,nuxt",
+    "prefix": "nuxt3-plugin-personal",
+    "body": [
+      "export default defineNuxtPlugin(context => {",
+      " // console.log(\"context MyPlugin -> \", context)",
+      "",
+      " return {",
+      "   provide: {",
+      "     sayHello: (msg: string) => console.log(`Hello ${msg}`)",
+      "   }",
+      " }",
+      "})",
+      ""
+    ],
+    "description": "Nuxt 3: plugin - personal"
+  }
+}

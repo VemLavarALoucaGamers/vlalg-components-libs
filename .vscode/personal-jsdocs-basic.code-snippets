@@ -1,0 +1,17 @@
+{
+  "Personal: jsdocs - basic": {
+    "scope": "vue,javascript,html,nuxt",
+    "prefix": "personal-jsdocs-basic",
+    "body": [
+      "/**",
+      " * Function Description",
+      " * @param {string} paramName - Param description",
+      " * @returns {string} Return description",
+      "*/",
+      "export function functionName (paramName) {",
+      " return paramName;",
+      "}"
+    ],
+    "description": "Personal: jsdocs - basic"
+  }
+}

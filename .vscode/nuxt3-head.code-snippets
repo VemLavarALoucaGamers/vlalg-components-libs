@@ -1,0 +1,21 @@
+{
+  "Nuxt 3: head": {
+    "scope": "vue,javascript,html,nuxt",
+    "prefix": "nuxt3-head",
+    "body": [
+      "// Envs",
+      "const config = useRuntimeConfig()",
+      "const baseUrl = config.public.baseUrl",
+      "",
+      "// Head",
+      "useHead({",
+      "  title: 'Page name',",
+      "  meta: [",
+      "    { name: 'description', content: 'Page name description' }",
+      "  ],",
+      "  link: [{ rel: 'canonical', href: `${baseUrl}/pageName` }],",
+      "})"
+    ],
+    "description": "Nuxt 3: head"
+  }
+}

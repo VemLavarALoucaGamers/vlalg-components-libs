@@ -1,0 +1,12 @@
+{
+	"Vue 3: watch": {
+    "scope": "vue,javascript,html,nuxt",
+    "prefix": "vue3-watch",
+    "body": [
+      "const $1 = computed(() => {",
+      "  return $2",
+      "})"
+    ],
+    "description": "Vue 3 (watch)"
+  }
+}

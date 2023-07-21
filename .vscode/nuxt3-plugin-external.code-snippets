@@ -1,0 +1,16 @@
+{
+  "Nuxt 3: plugin - External": {
+    "scope": "vue,javascript,html,nuxt",
+    "prefix": "nuxt3-plugin-external",
+    "body": [
+      "import ComponentName from 'package-name'",
+      "import \"package-name/dist/style.css\";",
+      "",
+      "// Context or App",
+      "export default defineNuxtPlugin(context => {",
+      " context.vueApp.use(ComponentName)",
+      "})"
+    ],
+    "description": "Nuxt 3: plugin - External"
+  }
+}

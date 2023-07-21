@@ -1,0 +1,12 @@
+{
+	"Vue 3: emit - mode 1": {
+    "scope": "vue,javascript,html,nuxt",
+    "prefix": "vue3-emit-1",
+    "body": [
+      "defineEmits([$1])",
+      "",
+      "emit('$2', $3)",
+    ],
+    "description": "Vue 3 (emit) mode 1 for <script setup>"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "Nuxt 3: server service": {
+    "scope": "vue,javascript,html,nuxt",
+    "prefix": "nuxt3-server-service",
+    "body": [
+      "export default defineEventHandler(async (event) => {",
+      "  return \"something\"",
+      "})"
+    ],
+    "description": "Nuxt 3: server service"
+  }
+}

@@ -1,0 +1,12 @@
+{
+	"Vue 3: file template": {
+    "scope": "vue,javascript,html,nuxt",
+    "prefix": "vue3-file-template",
+    "body": [
+      "<template>",
+      "$1",
+      "<template>"
+    ],
+    "description": "Vue 3 - Structure file template"
+  }
+}

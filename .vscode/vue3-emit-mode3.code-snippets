@@ -1,0 +1,19 @@
+{
+	"Vue 3: emit - mode 3": {
+    "scope": "vue,javascript,html,nuxt",
+    "prefix": "vue3-emit-3",
+    "body": [
+      "/*",
+      " * USE ",
+      " * export default {",
+      " *   emits: [\"name\"],",
+      " *   Setup (props, context) {",
+      " *     context.emit(\"name\", value)",
+      " *   }",
+      " * }",
+      "*/",
+      "context.emit(\"$1\", $2)",
+    ],
+    "description": "Vue 3 (emit) mode 2 for options api"
+  }
+}

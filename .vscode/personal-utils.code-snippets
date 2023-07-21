@@ -1,0 +1,12 @@
+{
+  "Personal: utils/helpers": {
+    "scope": "vue,javascript,html,nuxt",
+    "prefix": "personal-utils",
+    "body": [
+      "export const name = () => {",
+      "  return \"something\"",
+      "}"
+    ],
+    "description": "Personal: utils/helpers"
+  }
+}

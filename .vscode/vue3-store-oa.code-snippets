@@ -1,0 +1,23 @@
+{
+  "Vue 3: store Option Api - Pinia": {
+    "scope": "vue,javascript,html,nuxt",
+    "prefix": "vue3-store-oa-pinia",
+    "body": [
+      "import { defineStore } from 'pinia'",
+      "",
+      "export const useCounterStore = defineStore('counter', {",
+      "  state: () => ({ count: 0, name: 'Fulano' }),",
+      "  getters: {",
+      "    doubleCount: (state) => state.count * 2,",
+      "  },",
+      "  actions: {",
+      "    increment() {",
+      "      this.count++",
+      "    },",
+      "  },",
+      "})",
+      ""
+    ],
+    "description": "Vue 3: store Option Api - Pinia"
+  }
+}

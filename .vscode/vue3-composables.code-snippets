@@ -1,0 +1,21 @@
+{
+  "Vue 3: composables": {
+    "scope": "vue,javascript,html,nuxt",
+    "prefix": "vue3-composables-basic",
+    "body": [
+      "export const useComposableName = () => {",
+      "  /**",
+      "   * Do something",
+      "   * @param {string} something - something",
+      "   * @returns {string} something",
+      "   */",
+      "  const funcName = (something) => {",
+      "   return something,",
+      "  }",
+      "",
+      "  return {}",
+      "}"
+    ],
+    "description": "Vue 3: composables"
+  }
+}

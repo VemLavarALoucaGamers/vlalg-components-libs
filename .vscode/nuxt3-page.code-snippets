@@ -1,0 +1,31 @@
+{
+  "Nuxt 3: page": {
+    "scope": "vue,javascript,html,nuxt",
+    "prefix": "nuxt3-page",
+    "body": [
+      "<template>",
+      "  <div>",
+      "  </div>",
+      "</template>",
+      "",
+      "<script setup>",
+      "// Envs",
+      "const config = useRuntimeConfig()",
+      "const baseUrl = config.public.baseUrl",
+      "",
+      "// Head",
+      "useHead({",
+      "  title: 'Page name',",
+      "  meta: [",
+      "    { name: 'description', content: 'Page name description' }",
+      "  ],",
+      "  link: [{ rel: 'canonical', href: `${baseUrl}/pageName` }],",
+      "})",
+      "</script>",
+      "",
+      "<style lang=\"scss\" scoped>",
+      "</style>"
+    ],
+    "description": "Nuxt 3: page"
+  }
+}

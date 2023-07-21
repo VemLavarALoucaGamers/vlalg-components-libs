@@ -1,0 +1,22 @@
+{
+  "Nuxt 3: middleware - server": {
+    "scope": "vue,javascript,html,nuxt",
+    "prefix": "nuxt3-middleware-server",
+    "body": [
+      "export default defineEventHandler(async (event) => {",
+      "  /*",
+      "    // $fetch('/api/submit', { method: 'post', body: { test: 123 } })",
+      "    const body = await readBody(event)",
+      "    return { body }",
+      "",
+      "    // /api/query?param1=a&param2=b",
+      "    const query = getQuery(event)",
+      "    return { a: query.param1, b: query.param2 }",
+      "  */",
+      "",
+      "  $1",
+      "})"
+    ],
+    "description": "Nuxt 3: middleware - server"
+  }
+}

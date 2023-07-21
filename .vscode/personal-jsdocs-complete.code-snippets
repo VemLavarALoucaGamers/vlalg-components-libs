@@ -1,0 +1,26 @@
+{
+  "Personal: jsdocs - complete": {
+    "scope": "vue,javascript,html,nuxt",
+    "prefix": "personal-jsdocs-complete",
+    "body": [
+      "/**",
+      " * @fileoverview File description",
+      " * @author MyName",
+      " * @version 0.1",
+      " * ",
+      " * Personal Param Type",
+      " * @typedef PersonalParamName",
+      " * @property {string} paramName - Param description",
+      " * @property {string} paramName - Param description",
+      " *",
+      " * Function Description",
+      " * @param {PersonalParamName} paramName - Param description",
+      " * @returns {string} Return description",
+      " */",
+      "export function functionName (paramName) {",
+      "  return paramName;",
+      "}"
+    ],
+    "description": "Personal: jsdocs - complete"
+  }
+}

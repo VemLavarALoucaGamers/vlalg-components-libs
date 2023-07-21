@@ -1,0 +1,17 @@
+{
+  "Nuxt 3: module - JsonLd": {
+    "scope": "vue,javascript,html,nuxt",
+    "prefix": "nuxt3-module-jsonld",
+    "body": [
+      "// JSON-LD (Structured Google Data)",
+      "useJsonld(() => ({",
+      "  \"@context\": \"http://schema.org\",",
+      "  \"@type\": \"Organization\",",
+      "  name: \"appName\",",
+      "  logo: \"${baseUrl}/img/icons/logo.png\",",
+      "  url: \"baseUrl\"",
+      "}))"
+    ],
+    "description": "Nuxt 3: module - JsonLd"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "Nuxt 3: middleware - client": {
+    "scope": "vue,javascript,html,nuxt",
+    "prefix": "nuxt3-middleware-client",
+    "body": [
+      "export default defineNuxtRouteMiddleware(() => {",
+      " $1",
+      "})"
+    ],
+    "description": "Nuxt 3: middleware - client"
+  }
+}

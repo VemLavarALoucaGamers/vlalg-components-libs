@@ -1,0 +1,12 @@
+{
+	"Vue 3: methods - mode 1": {
+    "scope": "vue,javascript,html,nuxt",
+    "prefix": "vue3-methods-1",
+    "body": [
+      "function $1 () => {",
+      "  $2",
+      "}"
+    ],
+    "description": "Vue 3 (methods) mode 1 <script>"
+  }
+}
