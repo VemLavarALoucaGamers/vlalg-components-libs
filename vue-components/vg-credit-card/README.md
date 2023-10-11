@@ -1,6 +1,12 @@
 # Vg-Credit-Card
+
 > This component is only for [Vue.js 3+](https://vuejs.org/)
 
+# Deprecated Package
+
+This package has been deprecated and is no longer actively maintained. We recommend switching to the [@vlalg-nimbus/nb-payments](https://www.npmjs.com/package/@vlalg-nimbus/nb-payments) as a replacement for this one. The new package provides improved features, better performance, and ongoing support.
+
+<br />
 <br />
 
 <div align="center">
