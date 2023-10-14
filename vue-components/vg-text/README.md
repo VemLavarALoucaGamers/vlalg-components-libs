@@ -1,6 +1,11 @@
 # Vg-Text
 > This component is only for [Vue.js 3+](https://vuejs.org/)
 
+# Deprecated Package
+
+This package has been deprecated and is no longer actively maintained. We recommend switching to the [@vlalg-nimbus/nb-text](https://www.npmjs.com/package/@vlalg-nimbus/nb-text) as a replacement for this one. The new package provides improved features, better performance, and ongoing support.
+
+<br />
 <br />
 
 <div align="center">
